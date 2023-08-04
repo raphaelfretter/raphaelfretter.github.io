@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "Bookinsanity";
+    src: url("./fonts/Bookinsanity/Bookinsanity.otf") format("opentype");
+    font-weight: normal;
+}
+
+* {
+    font-family: 'Bookinsanity';
+}
+
+#navbar {
+    overflow: hidden;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    color: #833838;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+body {
+    position: absolute;
+    margin: 0 auto;
+    background-color: #fff4b5;
+}
+
+.content {
+    margin: 0 auto;
+    width: 50%;
+    padding: 1.5px;
+    font-size: 1.25rem;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
+p {
+    text-indent: 30px;
+}
