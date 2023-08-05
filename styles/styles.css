@@ -1,8 +1,4 @@
-@font-face {
-    font-family: "Bookinsanity";
-    src: url("./fonts/Bookinsanity/Bookinsanity.otf") format("opentype");
-    font-weight: normal;
-}
+@import "./fonts/fonts.css";
 
 * {
     font-family: 'Bookinsanity';
@@ -11,7 +7,8 @@
 nav {
     overflow: hidden;
     background-color: transparent;
-    transition: background-color .25s;
+    transition: background-color .15s;
+
 }
 
 nav a {
@@ -22,7 +19,12 @@ nav a {
     text-decoration: none;
     font-size: 1.25rem;
     color: #833838;
-    transition: color .25s;
+    transition: color .15s, filter .15s;
+    font-family: "Mr Eaves Small Caps";
+}
+
+nav a:hover {
+    filter: brightness(75%);
 }
 
 .sticky {
@@ -41,7 +43,7 @@ body {
     margin: 0 auto;
     width: 50%;
     padding: 1.5px;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
 }
 
 .sticky + #content {
@@ -50,4 +52,9 @@ body {
 
 p {
     text-indent: 30px;
+}
+
+h1, h2, h3 {
+    font-family: "Mr Eaves Small Caps";
+    color: #833838;
 }
