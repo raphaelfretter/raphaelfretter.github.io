@@ -42,6 +42,7 @@ body {
 #content {
     margin: 0 auto;
     width: 50%;
+    min-width: 360px;
     padding: 1.5px;
     font-size: 1.15rem;
 }

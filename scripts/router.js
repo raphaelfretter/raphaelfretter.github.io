@@ -9,7 +9,7 @@ document.addEventListener("click", (e) => {
 
 const routes = {
     404: {
-        template: "/templates/404.html",
+        template: "/404.html",
         title: "404",
         description: "Page not found",
     },
@@ -43,6 +43,7 @@ const route = (event) => {
 
 const locationHandler = async () => {
     const location = window.location.pathname;
+    console.log(location);
     if (location.length == 0) {
         location = "/";
     }
