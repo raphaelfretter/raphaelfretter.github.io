@@ -9,7 +9,7 @@ document.addEventListener("click", (e) => {
 
 const routes = {
     404: {
-        template: "/404.html",
+        template: "/src/404.html",
         title: "404",
         description: "Page not found",
     },
