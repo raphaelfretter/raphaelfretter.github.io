@@ -37,7 +37,7 @@ const routes = {
 
 const route = (event) => {
     event = event || window.event;
-    window.history.pushState({}, "", event.target.href || event);
+    window.history.pushState({}, "", event.target.href);
     locationHandler();
 };
 
